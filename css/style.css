@@ -9,7 +9,7 @@
     background: #872BDC;
   }
 
-  .batata {
+  .center {
     background-color: #FFF;
   }
 
@@ -22,7 +22,7 @@
     height: max(145px, 15vh)
   }
 
-  .boaz{
+  .top{
       display: flex;
       flex-direction: column;
       padding-top: 20px;
@@ -31,17 +31,17 @@
           
   }
 
-  .boaz p {
+  .top p {
       color: white;
       z-index: 20;
       
   }
 
-  .boaz img{
+  .top img{
     position: relative;
-    width: 120px; 
+    width: 130px; 
     top: -80px;
-    right: -240px;
+    right: -220px;
     z-index: 20;
 
   }
@@ -68,7 +68,7 @@
   
   section {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
   
     padding: 0 2rem;
@@ -99,7 +99,7 @@
   
   main .informations {
     display: flex;
-    align-items: center;
+    align-items: lefr;
     justify-content: space-between;
     margin: 2rem 0;
     background: #F7F9FF;
@@ -124,6 +124,7 @@
     font-weight: 600;
     font-size: 90%;
     transition: all 0.3s;
+    
   }
   
   main .informations a:hover {
@@ -139,8 +140,8 @@
   main button {
     cursor: pointer;
     padding: 1rem 0;
-    width: 100%;
-    background: #382AE1;
+    width: 50%;
+    background: #1F2E55;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     border-radius: 0.8rem;
     border: none;
@@ -160,14 +161,81 @@
     color: #717FA6;
     font-weight: 600;
     font-size: 0.95rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     transition: color 0.3s;
+    margin-right: 10px;
   }
   
   #cancel-order:hover {
     color: #1F2E55;
   }
-  
+  textarea{
+    margin-bottom: 30px;
+    background-color: #E8ECEF;
+    border-radius: 8px;
+    resize: none;
+  }
+  .text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .textTotal{
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #E8ECEF;
+    border-radius: 0 8px 8px;
+  }
+  .send{
+    margin: 25px 10px; 
+    align-content: center;
+    
+  }
+  .botaoReact{
+    width: 20px;
+    margin-left: 14px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background-color: #1F2E55;
+    color: #FFFF
+  }
+  .botaoReactDireito{
+    width: 20px;
+    margin-left: 3px;
+    border-radius: 8px;
+    background-color: #1F2E55;
+    color: #FFFF
+  }
+  .botaoVue{
+    width: 20px;
+    margin: 0 2px 0 2px;
+    margin-left: 28px;
+    border-radius: 8px;
+    background-color: #1F2E55;
+    color: #FFFF
+  }
+  .botaoVueDireito{
+    width: 20px;
+    margin: 0 2px 0 2px;
+    border-radius: 8px;
+    background-color: #1F2E55;
+    color: #FFFF
+  }
+  .botaoAngular {
+    width: 20px;
+    margin: 0 2px 0 2px;
+    border-radius: 8px;
+    background-color: #1F2E55;
+    color: #FFFF
+  }
+  .totalAdesivos{
+    margin-left: 10px;
+  }
   @media screen and (max-width: 650px) {
     body {
       background: url('../images/pattern-background-mobile.svg');
@@ -178,6 +246,9 @@
   
   @media screen and (max-width: 980px) {
     section {
-      padding: 0 3rem;
+      padding: 0 1,5rem;
     }
+  
+   
+    
   }

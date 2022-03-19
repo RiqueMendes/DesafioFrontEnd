@@ -8,49 +8,77 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Projeto BemPaggo</title>
 </head>
 <body>
     
    
   <main>
       
-  <header class = 'boaz'>
+  <header class = 'top'>
       
-        <p>Formulario</p>
+        <p>Formulário</p>
         <p> para compra de</p>
          <p>
              <b>Pacote de adesivos</b>
         </p> 
-        <img src="/img/caixa.png" alt="Box Illustration">
+        <img src="/img/Box_Boaz.png" alt="Box Illustration">
        
         
       </header>  
       
-    <div class = 'batata'>
+    <div class = 'center'>
     <section> 
         
-      <h1>Order Summary</h1>
-      <span class="description">You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!</span>
-  
-      <div class="informations">
-          
-        <div class="music-price">
-            
-          <img src="images/icon-music.svg" alt="Music Icon">
-          <div class="price">
-            <strong>Annual Plan</strong>
-            <span>$59.99/year</span>
-          </div>
+      
+      <div>
+        <p class = 'text'><b>Quais adesivos: </b> </p>  
+           
+        <div data-app="product.quantity" id="quantidade">
+          <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+          <label>React:</label>      
+          <input class = 'botaoReact' type="button" id="plus" value='-' onclick="process(-1)" />
+          <input id="quant" name="quant" class="text" size="1" type="text" value="0" maxlength="5" />
+          <input class ='botaoReactDireito' type="button" id="minus" value='+' onclick="process(1)">
         </div>
-        <a href="#">Change</a>
+        
+        <div data-app="product.quantity" id="quantidade">
+          <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+          <label>Vue:</label>      
+          <input class = 'botaoVue' type="button" id="plus" value='-' onclick="process1(-1)" />
+          <input id="quant1" name="quant1" class="text" size="1" type="text" value="0" maxlength="5" />
+          <input class ='botaoVueDireito' type="button" id="minus" value='+' onclick="process1(1)">
+        </div>
+        <div data-app="product.quantity" id="quantidade">
+          <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+          <label>Angular:</label>      
+          <input class = 'botaoAngular' type="button" id="plus" value='-' onclick="process2(-1)" />
+          <input id="quant2" name="quant2" class="text" size="1" type="text" value="0" maxlength="5" />
+          <input class ='botaoAngular' type="button" id="minus" value='+' onclick="process2(1)">
+        </div>
+        
+        <p class = textTotal >
+           <b> Total de adesivos:</b> 
+            <input id="total" name="total" class="totalAdesivos" size="1" type="text"/> 
+        </p>
+        
       </div>
-  
-      <button type="button">Proceed to Payment</button>
-      <a href="#" id="cancel-order">Cancel Order</a>
+     
+     <div>
+       
+       <p><b> Observações: </b></p>
+       <textarea placeholder="Alguma dúvida? Recado?" name="teste" id="teste" cols="40" rows="5"></textarea>
+     </div>
+     </div>
     </section>
+    <footer> 
+      <button class ='send' type="button">Pagamento</button>
+      <a href="#" id="cancel-order">Cancelar Pedido</a> </footer>
+      
+    
 </div>
   </main>
+  <script src = 'js/script.js'></script>
+  {% element('snippets/botoes_qty') %}
 </body>
 </html>
