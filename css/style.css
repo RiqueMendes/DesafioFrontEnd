@@ -27,8 +27,10 @@
       flex-direction: column;
       padding-top: 20px;
       padding-left: 20px;
-      width: 100%;
-          
+      width: 100%;     
+  }
+  label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   }
 
   .top p {
